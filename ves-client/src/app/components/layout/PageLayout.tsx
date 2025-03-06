@@ -9,7 +9,7 @@ type Props = {
 export default function PageLayout({ children }: Props) {
 
     return (
-        <div className="min-h-screen flex flex-col bg-white">
+        <div className="relative bg-gradient-to-b min-h-screen flex flex-col">
             <Header />
             <main className="flex-1">{children}</main>
             <Footer />
