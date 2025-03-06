@@ -10,12 +10,13 @@ export function Banner() {
                 <div className="absolute left-0 top-0 -z-10 flex h-[100vh] w-full flex-col bg-[black] overflow-hidden">
 
                     <Image
-                        src="/VES_banner.webp"
+                        // src="/VES_banner.webp"
+                        src="/VES_banner02.jpg"
                         alt="banner Vênus"
                         fill={true} 
                         className="opacity-30 object-cover"
                     />
-                        
+                    <div className="absolute bottom-0 w-full h-70 bg-gradient-to-t from-white/30 to-transparent"></div>   
                 </div>       
                 <h1 className="text-5xl font-bold md:text-7xl lg:text-9xl text-center">
                     Seja bem-vindo!
@@ -28,19 +29,18 @@ export function Banner() {
 
                 <div className="flex space-x-3 justify-center">
                     <Link
-                        href="#"
+                        href="https://youtu.be/4FVBDKL2xFk?si=-k8nYfKh61Wp-qlI"
                         target="_blank"
-                        className='flex cursor-pointer items-center gap-x-2 rounded bg-white px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5'>
+                        className='flex cursor-pointer items-center gap-x-2 rounded bg-gray-500 px-5 py-1.5 text-sm font-semibold text-black transition md:px-8 md:py-2.5 hover:bg-[#035EFC] hover:text-white'>
                         <PlayIcon className='h-6' />
-                        Trailer
+                        Quem somos?
                     </Link>
                     <Link
                         href="#"
-                        target="_blank">
-                        <button className='flex cursor-pointer items-center gap-x-2 rounded bg-gray-500 px-5 py-1.5 text-sm font-semibold text-black transition hover:opacity-75 md:px-8 md:py-2.5'>
-                            <InformationCircleIcon className='h-6' />
-                            More Info
-                        </button>
+                        target="_blank"
+                        className='flex cursor-pointer items-center gap-x-2 rounded bg-white px-5 py-1.5 text-sm font-semibold text-black transition md:px-8 md:py-2.5 hover:bg-[#035EFC] hover:text-white'>
+                        <InformationCircleIcon className='h-6' />
+                        Orçamento
                     </Link>
                 </div>
 
