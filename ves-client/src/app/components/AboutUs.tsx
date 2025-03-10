@@ -1,63 +1,58 @@
 import Image from "next/image";
-import { FaLeaf, FaBolt, FaHandshake, FaStar, FaWhatsapp } from "react-icons/fa";
+import { FaHammer, FaTools, FaPencilRuler } from "react-icons/fa";
 
-const AboutUs = () => {
+export default function AboutUs() {
   return (
-    <section className="py-16 bg-gray-900 text-white">
-      <div className="container mx-auto px-6 lg:px-20">
-        <h2 className="text-4xl font-bold text-center mb-12">Quem Somos</h2>
-        
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Card 1 - Equipe */}
-          <div className="bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col items-center text-center h-105">
-            <Image src="/VES_banner03.jpg" alt="Nossa equipe" width={500} height={200} className="rounded-lg mb-4" />
-            <h3 className="text-2xl font-semibold">Nossa Equipe</h3>
-            <p className="mt-2 text-gray-300">Profissionais dedicados para oferecer a melhor solução em energia solar.</p>
-          </div>
+    <section className="relative w-full z-0 h-[60vh] bg-fixed bg-center bg-cover flex items-center justify-center text-white"
+    style={{
+      backgroundImage: "url('https://www.techspot.com/images2/news/bigimage/2022/04/2022-04-14-image-15.jpg')", 
+    }}>
+      <div className="absolute inset-0 bg-black/75"></div>
+      
 
-          {/* Card 2 - Valores */}
-          <div className="bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col items-center text-center h-105">
-            <h3 className="text-2xl font-semibold mb-4">Nossos Valores</h3>
-            <div className="text-gray-300 space-y-4">
-              <div className="flex items-center gap-3">
-                <FaLeaf className="text-green-400 text-xl" />
-                <span className="text-lg">Sustentabilidade e respeito ao meio ambiente</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <FaBolt className="text-yellow-400 text-xl" />
-                <span className="text-lg">Inovação para um futuro mais eficiente</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <FaHandshake className="text-blue-400 text-xl" />
-                <span className="text-lg">Compromisso com nossos clientes</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <FaStar className="text-orange-400 text-xl" />
-                <span className="text-lg">Qualidade e excelência em cada projeto</span>
+      {/* Content */}
+      <div className="relative z-10 flex flex-col md:flex-row items-center max-w-5xl mx-auto p-6">
+        {/* Left Side - Main Text */}
+        <div className="md:w-2/3">
+          <h1 className="text-3xl md:text-5xl font-bold">
+            <span className="border-l-4 border-yellow-500 pl-3">Our Construction</span> Services
+          </h1>
+          <p className="mt-4 text-lg text-gray-200">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lectus erat consectetur.
+          </p>
+          <button className="mt-5 bg-yellow-500 text-black font-semibold px-6 py-3 rounded-md hover:bg-yellow-600 transition">
+            GET A FREE QUOTE
+          </button>
+        </div>
+
+        {/* Right Side - Services List */}
+        <div className="md:w-1/3 mt-8 md:mt-0 md:ml-10 bg-gray-800 bg-opacity-75 p-6 rounded-lg">
+          <h2 className="text-xl font-bold text-yellow-500">What We Do</h2>
+          <div className="mt-4 space-y-4">
+            <div className="flex items-start gap-3">
+              <FaHammer className="text-yellow-500 text-2xl" />
+              <div>
+                <h3 className="text-lg font-semibold">Building Construction</h3>
+                <p className="text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
-          </div>
-
-          {/* Card 3 - CTA */}
-          <div className="bg-gray-800 p-8 rounded-2xl shadow-lg flex flex-col items-center text-center h-105">
-            <h3 className="text-2xl font-semibold">Entre em Contato</h3>
-            <p className="mt-2 text-gray-300">Tem dúvidas ou quer um orçamento? Estamos à disposição para ajudar você a transformar sua energia!</p>
-            <p className="mt-4 text-gray-300">📍 Atendimento em todo o Brasil</p>
-            <p className="text-gray-300">📞 Suporte especializado</p>
-            <a
-              href="https://wa.me/5511999999999"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 flex items-center gap-2 bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition"
-            >
-              <FaWhatsapp className="text-xl" />
-              Fale Conosco
-            </a>
+            <div className="flex items-start gap-3">
+              <FaTools className="text-yellow-500 text-2xl" />
+              <div>
+                <h3 className="text-lg font-semibold">Building Repairs</h3>
+                <p className="text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <FaPencilRuler className="text-yellow-500 text-2xl" />
+              <div>
+                <h3 className="text-lg font-semibold">Custom Design</h3>
+                <p className="text-sm text-gray-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default AboutUs;
+}
