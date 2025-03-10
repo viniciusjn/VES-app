@@ -12,7 +12,7 @@ export function Banner() {
     return (
         <div className="mb-10 lg:mb-17">
             <div className="flex flex-col space-y-4 py-16 md:space-y-4 lg:h-[90vh] lg:justify-center lg:pb-12">
-                <div className="absolute left-0 top-0 -z-10 flex h-[100vh] w-full flex-col bg-[black] overflow-hidden">
+                <div className="absolute left-0 top-0 -z-10 flex h-[60vh] lg:h-[100vh] w-full flex-col bg-[black] overflow-hidden">
 
                     <Image
                         // src="/VES_banner.webp"
@@ -20,7 +20,7 @@ export function Banner() {
                         // src="https://videos.pexels.com/video-files/2887464/2887464-hd_1920_1080_25fps.mp4"
                         alt="banner Vênus"
                         fill={true} 
-                        className="opacity-30 object-cover"
+                        className="opacity-20 object-cover"
                     />
                     <div className="absolute bottom-0 w-full h-70 bg-gradient-to-t from-[#0A0A0A] to-transparent"></div>   
                 </div>       
@@ -39,15 +39,15 @@ export function Banner() {
                         target="_blank"
                         // className='flex cursor-pointer items-center gap-x-4 rounded-lg bg-gray-500 px-10 py-4 text-lg font-bold text-black transition md:px-12 md:py-5 hover:bg-[#035EFC] hover:text-white'>
                         className='flex cursor-pointer items-center gap-x-4 rounded-lg bg-gray-500 px-10 py-4 text-lg font-bold text-black transition md:px-12 md:py-5 hover:bg-[#035EFC] hover:text-white'>
-                        <CurrencyDollarIcon className='h-10' />
+                        <CurrencyDollarIcon className="w-8 h-8 lg:w-10 lg:h-10" />
                         Simule seu orçamento
                     </Link>
                     <Link
                         href={whatsappUrl}
                         target="_blank"
                         // className='flex cursor-pointer items-center gap-x-4 rounded-lg bg-white px-10 py-4 text-lg font-bold text-black transition md:px-12 md:py-5 hover:bg-[#25d366] hover:text-white'>
-                        className='flex cursor-pointer items-center gap-x-4 rounded-lg bg-white px-10 py-4 text-lg font-bold text-black transition md:px-12 md:py-5 hover:bg-[#25d366] hover:text-white'>
-                        <FaWhatsapp className="w-10 h-10" />
+                        className='flex cursor-pointer items-center gap-x-1 lg:gap-x-4 rounded-lg bg-white px-10 py-4 text-lg font-bold text-black transition md:px-12 md:py-5 hover:bg-[#25d366] hover:text-white'>
+                        <FaWhatsapp className="w-5 h-5 lg:w-10 lg:h-10" />
                         Fale conosco
                     </Link>
                 </div>
