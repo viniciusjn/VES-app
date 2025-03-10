@@ -3,7 +3,7 @@ import { FaHammer, FaTools, FaPencilRuler } from "react-icons/fa";
 
 export default function AboutUs() {
   return (
-    <section className="relative w-full z-0 h-[60vh] bg-fixed bg-center bg-cover flex items-center justify-center text-white"
+    <section className="relative w-full z-0 lg:h-[60vh] h-[90vh] bg-fixed bg-center bg-cover flex items-center justify-center text-white"
     style={{
       backgroundImage: "url('https://www.techspot.com/images2/news/bigimage/2022/04/2022-04-14-image-15.jpg')", 
     }}>
