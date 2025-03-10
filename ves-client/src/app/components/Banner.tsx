@@ -16,7 +16,7 @@ export function Banner() {
                         fill={true} 
                         className="opacity-30 object-cover"
                     />
-                    <div className="absolute bottom-0 w-full h-70 bg-gradient-to-t from-white/30 to-transparent"></div>   
+                    <div className="absolute bottom-0 w-full h-70 bg-gradient-to-t from-[#0A0A0A] to-transparent"></div>   
                 </div>       
                 <h1 className="text-5xl font-bold md:text-7xl lg:text-9xl text-center">
                     Seja bem-vindo!
