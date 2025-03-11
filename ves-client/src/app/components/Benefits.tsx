@@ -17,7 +17,7 @@ const features = [
 
 export default function Benefits() {
   return (
-    <section className="text-white lg:py-16 h-[210vh] lg:h-[105vh]">
+    <section className="text-white lg:py-16 h-[208vh] lg:h-[105vh]">
       <div className="container mx-auto px-6 text-center">
         <h2 className="text-5xl lg:text-6xl font-bold">Quais são os principais benefícios ao utilizar energia solar?</h2>
 
