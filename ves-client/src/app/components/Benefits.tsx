@@ -17,17 +17,17 @@ const features = [
 
 export default function Benefits() {
   return (
-    <section className="text-white py-16 h-[105vh]">
+    <section className="text-white lg:py-16 h-[210vh] lg:h-[105vh]">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-6xl font-bold">Quais são os principais benefícios ao utilizar energia solar?</h2>
+        <h2 className="text-5xl lg:text-6xl font-bold">Quais são os principais benefícios ao utilizar energia solar?</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
           {features.map((feature, index) => (
             <div key={index} className="flex flex-col items-center text-center">
               <div className="bg-gray-800 p-10 rounded-full">
-                <feature.icon className="h-30 w-30 text-[#035EFC]" />
+                <feature.icon className="h-20 w-20 lg:h-30 lg:w-30 text-[#035EFC]" />
               </div>
-              <h3 className="text-4xl font-semibold mt-4">{feature.title}</h3>
+              <h3 className="text-3xl lg:text-4xl font-semibold mt-4">{feature.title}</h3>
               <p className="text-xl text-gray-400 mt-2">{feature.description}</p>
             </div>
           ))}
