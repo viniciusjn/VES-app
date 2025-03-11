@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-import { FaHammer, FaTools, FaPencilRuler, FaCalculator, FaDollarSign } from "react-icons/fa";
+import { FaTools, FaCalculator, FaDollarSign } from "react-icons/fa";
 import { FaGear } from "react-icons/fa6";
 
 export default function AboutUs() {
