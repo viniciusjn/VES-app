@@ -2,6 +2,7 @@ import PageLayout from "./components/layout/PageLayout";
 import { Banner } from "./components/Banner";
 import AboutUs from "./components/AboutUs";
 import Benefits from "./components/Benefits";
+import Reviews from "./components/Reviews";
 
 export default function Home() {
   return (
@@ -14,6 +15,8 @@ export default function Home() {
       <Benefits />
 
       <AboutUs />
+
+      <Reviews />
       
     </PageLayout>
   );
