@@ -9,7 +9,7 @@ export default function AboutUs() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
-    <section className="relative w-full z-0 lg:h-[70vh] md:h-[65vh] h-[90vh] bg-fixed bg-center bg-cover flex items-center justify-center text-white"
+    <section className="relative w-full z-0 lg:h-[70vh] md:h-[65vh] h-[100vh] bg-fixed bg-center bg-cover flex items-center justify-center text-white"
     style={{
       backgroundImage: "url('https://assets.science.nasa.gov/content/dam/science/esd/eo/content-feature/nightlights/images/media/BlackMarble_2016_Americas_composite.png')", 
     }}>

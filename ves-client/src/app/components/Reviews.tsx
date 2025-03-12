@@ -34,7 +34,7 @@ export default function Reviews() {
   
     return (
       <section className="w-full min-h-screen bg-[#0A0A0A] flex flex-col items-center py-16 px-4">
-        <h2 className="text-5xl lg:text-6xl font-bold text-white text-center mb-12 pt-16 pb-5">
+        <h2 className="text-5xl lg:text-6xl font-bold text-white text-center mb-12 py-6">
           O que nossos clientes dizem?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
