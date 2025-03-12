@@ -19,7 +19,7 @@ export default function AboutUs() {
       <div className="relative z-10 flex flex-col md:flex-row items-center max-w-5xl mx-auto p-6">
         <div className="md:w-2/3">
           <h1 className="text-3xl font-bold">
-            <span className="border-l-4 border-[#035EFC] pl-3 text-5xl">Sobre a <a className="text-yellow-500">Vênus</a></span>
+            <span className="border-l-4 border-[#035EFC] pl-3 text-7xl">Sobre a <a className="text-yellow-500">Vênus</a></span>
             <a className="mt-2 block"><br/>Nosso objetivo</a>
           </h1>
           <p className="mt-4 text-lg text-gray-200">
