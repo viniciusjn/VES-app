@@ -4,21 +4,21 @@ export default function Reviews() {
     const reviews = [
       {
         name: "João Silva",
-        image: "/VES_banner03.jpg",
+        image: "/VES_logo.png",
         rating: 5,
         text: "Excelente serviço, recomendo muito! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum earum quam odio ab dolore deserunt modi maiores, cum praesentium libero obcaecati aut molestias, sed, laboriosam eligendi exercitationem omnis quibusdam.",
         timeAgo: "há 2 semanas",
       },
       {
         name: "Maria Oliveira",
-        image: "/VES_banner03.jpg",
+        image: "/VES_banner.webp",
         rating: 4,
         text: "Atendimento ótimo, só demorou um pouco a instalação. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum earum quam odio ab dolore deserunt modi maiores, cum praesentium libero obcaecati aut molestias, sed, laboriosam eligendi exercitationem omnis quibusdam.",
         timeAgo: "há 1 mês",
       },
       {
         name: "Carlos Santos",
-        image: "/VES_banner03.jpg",
+        image: "/VES_banner02.jpg",
         rating: 5,
         text: "Equipe muito profissional, energia solar é o futuro! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum earum quam odio ab dolore deserunt modi maiores, cum praesentium libero obcaecati aut molestias, sed, laboriosam eligendi exercitationem omnis quibusdam.",
         timeAgo: "há 6 meses",
@@ -34,9 +34,11 @@ export default function Reviews() {
   
     return (
       <section className="w-full min-h-screen bg-[#0A0A0A] flex flex-col items-center py-16 px-4">
-        <h2 className="text-5xl lg:text-6xl font-bold text-white text-center mb-12 py-6">
-          O que nossos clientes dizem?
-        </h2>
+        <div className="container mx-auto px-6 text-center">
+          <h2 className="text-5xl lg:text-6xl font-bold text-white text-center mb-12 py-6">
+            O que nossos clientes dizem sobre nossos serviços?
+          </h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
           {reviews.map((review, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 flex flex-col items-start shadow-lg w-full">
