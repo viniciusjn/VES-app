@@ -66,7 +66,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 w-full h-50 bg-gradient-to-t from-[#171717] to-transparent"></div>
+      <div className="absolute bottom-0 w-full h-50 bg-gradient-to-t from-[#0A0A0A] to-transparent"></div>
     </section>
   );
 }
