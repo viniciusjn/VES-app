@@ -1,9 +1,17 @@
+"use client"
+
 import Link from "next/link";
 import Image from "next/image";
+import { useScroll } from "@/app/hooks/useScroll";
 
 export default function Header() {
+
+    const isScrolled = useScroll();
+
     return (
-        <header className="fixed top-0 z-50 flex w-full items-center justify-between bg-gradient-to-b from-black/70 p-2 px-4 transition-all lg:px-16 lg:py-4">
+        <header className={`${isScrolled && 'bg-[#0A0A0A]'}
+            fixed top-0 z-50 
+            flex w-full items-center justify-between bg-gradient-to-t from-transparent to-black/70 p-2 px-4 transition-all lg:px-16 lg:py-4`}>
             <Link href="/">
                 <Image src="/VES_logo.png" alt="logo Netflix" width={70} height={70} className="cursor-pointer"/>
             </Link>

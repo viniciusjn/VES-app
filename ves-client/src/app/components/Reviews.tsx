@@ -39,7 +39,7 @@ export default function Reviews() {
             O que nossos clientes dizem sobre nossos serviços?
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
           {reviews.map((review, index) => (
             <div key={index} className="bg-white rounded-2xl p-6 flex flex-col items-start shadow-lg w-full">
               <div className="flex items-center justify-between w-full mb-4">
