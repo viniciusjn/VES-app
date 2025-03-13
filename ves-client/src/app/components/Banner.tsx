@@ -22,7 +22,7 @@ export function Banner() {
                     <div className="absolute bottom-0 w-full h-70 bg-gradient-to-t from-[#0A0A0A] to-transparent"></div>   
                 </div>       
                 <h1 className="text-7xl font-bold lg:text-8xl text-center max-w-5xl mx-auto">
-                    Reduza sua conta de luz em até xxx <a className="text-yellow-500 font-bold underline">95%</a> com energia solar!
+                    Reduza sua conta de luz em até <a className="text-yellow-500 font-bold underline">95%</a> com energia solar!
                 </h1>
 
                 <p className="text-shadow-md max-w-5xl text-lg md:text-xl lg:text-3xl text-center mx-auto py-4">
